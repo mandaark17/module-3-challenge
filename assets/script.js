@@ -25,12 +25,12 @@ function getRandomInt(min, max) {
 function generatePassword() {
 
 // Min/Max character length
-  var passLength = window.prompt("Ent-ah a numb-uh between 8 and 128", passLength);
+  var length = window.prompt("Ent-ah a numb-uh between 8 and 128", length);
   var genPassword = "";
   var charPool = ""
 
 // Filtering password criteria
-  if (passLength <= 7 || passLength >= 129) {
+  if (length <= 7 || length >= 129) {
     window.alert("Wise guy, huh? Do it again, see what happens.");
     return "";
   }
@@ -52,7 +52,7 @@ function generatePassword() {
       charPool += specialChars
     }
 
-    for (var i = 0; i < passLength; i++) {
+    for (var i = 0; i < length; i++) {
       // generate a random index between 0 and the charPool length
       randomIndex = getRandomInt(0, charPool.length);
       // get the charPool character at the randomIndex position
