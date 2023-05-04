@@ -1,5 +1,7 @@
 <img src="./assets/module-3-pic.jpg">
 
+https://mandaark17.github.io/module-3-challenge/
+
 # module-3-challenge
 Password Generator
 
